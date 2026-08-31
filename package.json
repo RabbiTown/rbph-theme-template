@@ -1,0 +1,24 @@
+{
+  "name": "rbph-theme-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config .rbph/vite.config.ts",
+    "build": "vue-tsc --noEmit && vite build --config .rbph/vite.config.ts",
+    "bundle": "pnpm build && node .rbph/bundle.mjs",
+    "preview": "vite preview --config .rbph/vite.config.ts"
+  },
+  "dependencies": {
+    "vue": "^3.5.38"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16",
+    "vue-tsc": "^3.3.4"
+  },
+  "packageManager": "pnpm@10.24.0"
+}
